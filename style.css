@@ -1,0 +1,131 @@
+
+.header {
+  display: flex;
+	align-content: space-around;
+  justify-content: center;
+  width: 100%;
+	min-height: 50px;
+	background-color: #4677ff;
+	border-radius: 25px;
+}
+
+.ul {
+  display: flex;
+	flex-flow: wrap;
+  justify-content: space-around;
+	width: 100%;
+}
+
+.ul_start{
+	align-items: flex-start;
+}
+.ul_rowWrap{
+	flex-flow: row wrap;
+}
+
+ul li {
+  list-style-type: none;
+  margin-right: 5%;
+}
+button {
+  background-color: rgb(252, 252, 149);
+  border-radius: 20px;
+}
+button:hover {
+  cursor: pointer;
+}
+button:focus {
+  outline: 1px dashed red;
+}
+
+/* main CARD */
+.cards {
+  display: flex;
+  width: 100%;
+}
+
+.card_margin {
+  margin: 30px;
+}
+.cardBox {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 250px;
+  width: 170px;
+  margin-bottom: 20px;
+  background-color: lightblue;
+  border: 1px solid blue;
+	cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.cardBox:hover {
+  border: 1px solid rgb(19, 216, 19);
+  border-radius: 10px;
+  box-shadow: 10px 10px rgb(194, 191, 191);
+}
+
+.cardBox--male.colored {
+  background-color: deepskyblue;
+}
+
+.cardBox--female.colored {
+  background-color: pink;
+}
+.cardBox img.hidden {
+  display: none;
+}
+.bigCard {
+  height: 400px;
+  width: 300px;
+}
+.S {
+  height: 32px;
+  width: 32px;
+}
+.M {
+  height: 64px;
+  width: 64px;
+}
+.L {
+  height: 128px;
+  width: 128px;
+}
+.S,
+.L,
+.M {
+  display: flex;
+  align-items: center;
+}
+/*add 3 classes S M L*/
+.cardContent {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+h3,
+p {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+/* LOADER */
+.loader {
+  display: block;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.loader.loader__hidden {
+  display: none;
+}
+.male {
+  background-color: rgb(11, 169, 254);
+}
+.female {
+  background-color: rgb(243, 67, 96);
+}
+.hidden {
+  display: none;
+}
