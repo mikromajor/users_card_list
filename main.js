@@ -11,10 +11,19 @@ const arrButtonNames = [];
 // fetch
 const getArrObjUsers = () => {
   const arrObjUsers = fetch(
-    "https://randomuser.me/api/?results=20"
+    "https://randomuser.me/api/?results=50"
   )
-    .then((request) => request.json())
-    .then((obj) => obj.results)
+    .then((request) => {
+      console.log(
+        "request before handling json ->",
+        request
+      );
+      return request.json();
+    })
+    .then((obj) => {
+      console.log("request after handling json -->", obj);
+      return obj.results;
+    })
     .catch((error) => console.log("fetch error =>", error));
   console.log("arrObjUsers -> ", arrObjUsers);
   return arrObjUsers;
